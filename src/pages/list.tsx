@@ -1,9 +1,15 @@
 import Link from "next/link"
+import { VehiclePerson } from "../interfaces/VehiclePerson";
 
-export default function List({ownersList}) {
+export interface ListProps {
+    ownersList: VehiclePerson[] | undefined
+}
+
+export default function List({ownersList}: ListProps) {
     return (
         <div>
-            {ownersList.map((owner, index) => (
+            {/* Can be undefined therefor we have questionmark */}
+            {ownersList?.map((owner, index) => (
                 <div key={index}>
                     <Link as={`${owner.vehicle}/${owner.ownerName}`} href="/[vehicle]/[person]">
                         <a>
@@ -18,6 +24,6 @@ export default function List({ownersList}) {
 
 List.getInitialProps = async() => {
     const response = await fetch('http://localhost:4001/vehicles');
-    const ownersList = await response.json();
+    const ownersList: VehiclePerson[] | undefined = await response.json();
     return {ownersList: ownersList}
 }
