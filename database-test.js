@@ -1,7 +1,6 @@
 import { open } from 'sqlite'
 import sqlite3 from 'sqlite3'
 
-
 (async () => {
     const [db] = await Promise.all([
         open({
@@ -16,4 +15,7 @@ import sqlite3 from 'sqlite3'
 
     const people = await db.all('SELECT * FROM person');
     console.log("All people", JSON.stringify(people, null, 2))
+
+    const vehicles = await db.all('SELECT * FROM person');
+    console.log("All vehicles", JSON.stringify(vehicles, null, 2))
 })()

@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next dev",
+    "dev": "node ./database-test.js && next dev",
     "build": "next build",
     "start": "next start",
     "mock-server": "json-server --watch ./db.json -p 4001 -d 3000"
