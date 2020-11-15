@@ -2,6 +2,7 @@
   "name": "nextpractise",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -15,6 +16,7 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "sqlite": "^4.0.17",
+    "sqlite3": "^5.0.0",
     "swr": "^0.3.8"
   },
   "devDependencies": {
