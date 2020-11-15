@@ -16,6 +16,6 @@ import sqlite3 from 'sqlite3'
     const people = await db.all('SELECT * FROM person');
     console.log("All people", JSON.stringify(people, null, 2))
 
-    const vehicles = await db.all('SELECT * FROM person');
+    const vehicles = await db.all('SELECT * FROM vehicle');
     console.log("All vehicles", JSON.stringify(vehicles, null, 2))
 })()

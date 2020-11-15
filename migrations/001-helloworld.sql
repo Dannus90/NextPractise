@@ -19,7 +19,8 @@ INSERT INTO person (name, email) values ("Daniel", "Danielperra@gmail.com");
 INSERT INTO person (name, email) values ("Jack", "Jackperra@gmail.com");
 
 INSERT INTO vehicle (brand, model, ownerId) values("audi", "R8", 1);
-INSERT INTO vehicle (brand, model, ownerId) values("mercedes", "benz", 1);
+INSERT INTO vehicle (brand, model, ownerId) values("audi", "R6", 1);
+INSERT INTO vehicle (brand, model, ownerId) values("mercedes", "benz", 2);
 
 --------------------------------------------------------------------------------
 -- Down
