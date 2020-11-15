@@ -2,6 +2,7 @@
   "name": "nextpractise",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "node ./database-test/database-test.js && next dev",
     "build": "next build",
